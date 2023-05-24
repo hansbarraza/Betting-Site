@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Featured from '../components/Featured'
 
 export default function Home() {
 
@@ -14,8 +15,10 @@ export default function Home() {
     <Navbar/>
     <div className='grid grid-cols-4'>
     <Sidebar/>
+    <div className='col-span-2'>
+      <Featured/>
     </div>
-    {/* Featured */}
+    </div>
     {/* Footer */}
     </div>
   )
